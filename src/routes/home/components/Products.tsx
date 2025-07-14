@@ -41,7 +41,7 @@ export default function Products() {
         />
         <StyledProduct
           src={carImage}
-          onClick={() => setSelectedProduct(ProductEnum.Mortgage)}
+          onClick={() => setSelectedProduct(ProductEnum.CarFinance)}
         />
       </StyledProductsContainer>
       <StyledProductContentContainer>
