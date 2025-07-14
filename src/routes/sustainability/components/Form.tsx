@@ -53,6 +53,14 @@ export default function Form() {
 
         <Label htmlFor="phone">Phone Number</Label>
 
+        <InputField
+          type="phone"
+          id="phone"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+        />
+
         <SubmitButton type="submit">Submit</SubmitButton>
       </FormContainer>
     </FormWrapper>

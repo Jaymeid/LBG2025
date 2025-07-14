@@ -13,7 +13,11 @@ export default function Hero() {
     <>
       <HeroContainer>
         <StyledHeroImage src={heroImage} />
-        <StyledHeroButton onClick={() => {}}>
+        <StyledHeroButton
+          onClick={() => {
+            navigate(routes.Careers);
+          }}
+        >
           Explore our careers!
         </StyledHeroButton>
       </HeroContainer>
