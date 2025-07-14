@@ -117,7 +117,7 @@ export default function FAQAccordion() {
       <div>
         <Question
           isOpen={openIndex === 4}
-          onClick={() => toggleIndex(3)}
+          onClick={() => toggleIndex(4)}
           aria-expanded={openIndex === 4}
           aria-controls="faq-answer-4"
           id="faq-question-4"
