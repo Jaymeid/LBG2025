@@ -33,15 +33,15 @@ export default function Products() {
       <StyledProductsContainer>
         <StyledProduct
           src={mortgageImage}
-          onClick={() => setSelectedProduct(ProductEnum.Mortgage)}
+          onClick={(Mortgage) => setSelectedProduct(ProductEnum.Mortgage)}
         />
         <StyledProduct
           src={savingsImage}
-          onClick={() => setSelectedProduct(ProductEnum.Savings)}
+          onClick={(Savings) => setSelectedProduct(ProductEnum.Savings)}
         />
         <StyledProduct
           src={carImage}
-          onClick={() => setSelectedProduct(ProductEnum.Mortgage)}
+          onClick={(CarFinance) => setSelectedProduct(ProductEnum.CarFinance)}
         />
       </StyledProductsContainer>
       <StyledProductContentContainer>
