@@ -6,7 +6,7 @@ import Footer from "./components/footer/Footer";
 import SustainabilityPage from "./routes/sustainability/SustainabilityPage";
 import styled from "styled-components";
 import CareersPage from "./routes/careers/CareersPage";
-
+import InvestmentsPage from "./routes/Investments/investmentspage";
 const AppLayout = styled.div`
   min-height: 100vh;
   display: flex;
@@ -25,6 +25,7 @@ function App() {
             element={<SustainabilityPage />}
           />
           <Route path={routes.Careers} element={<CareersPage />} />
+          <Route path={routes.Investments} element={<InvestmentsPage />} />
         </Routes>
         <Footer />
       </AppLayout>
