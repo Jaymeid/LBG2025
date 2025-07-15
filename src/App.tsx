@@ -9,9 +9,6 @@ import CareersPage from "./routes/careers/CareersPage";
 
 const AppLayout = styled.div`
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-`;
 
 function App() {
   return (

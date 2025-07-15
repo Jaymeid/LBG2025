@@ -10,6 +10,8 @@ export default function TextBox({ heading, text }: TextBoxProps) {
     <StyledTextBox>
       <StyledHeader>{heading}</StyledHeader>
       <StyledText>{text}</StyledText>
+      <h1>This is now permanent text in the reusable component?</h1>
+      <CoolText>Crazy ahh component that doesnt exist</CoolText>
     </StyledTextBox>
   );
 }

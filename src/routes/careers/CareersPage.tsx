@@ -120,6 +120,19 @@ export default function CareersPage() {
           </StyledJobContainer>
         ))}
       </StyledJobsRow>
+
+      <StyledHeaderContainer>
+        <StyledSectionHeader>Senior Level Careers</StyledSectionHeader>
+      </StyledHeaderContainer>
+      <StyledJobsRow>
+        {seniorLevelJobs.map((item) => (
+          <StyledJobContainer>
+            <StyledCareerImage src={earlyCareersImage} />
+            <StyledJobTitle>{item.jobTitle}</StyledJobTitle>
+            <StyledJobDescription>{item.jobDescription}</StyledJobDescription>
+          </StyledJobContainer>
+        ))}
+      </StyledJobsRow>
     </Main>
   );
 }

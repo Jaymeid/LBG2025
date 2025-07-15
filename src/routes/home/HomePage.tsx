@@ -14,6 +14,12 @@ import { VerticalFlexBox } from "../../components/verticalFlexBox/VerticalFlexBo
 import PartitionedProgressBar from "../../components/partitionedProgressBar/PartitionedProgressBar";
 
 export default function HomePage() {
+  for (let i = 0; i <= 10; i++) {
+    console.log(
+      "iorgoirgia iefbasosirghrkgjrghjidfgjsdlksldjfsrhgjjdrropgjsdkfgnlskflkpijwefjoasjfaskfslkdfkasgierjgoiherlgnsdlkgn"
+    );
+  }
+
   return (
     <Main>
       <Hero />
@@ -26,7 +32,7 @@ export default function HomePage() {
         <p>hola</p>
         <h2>Muchacho</h2>
         <h3>Brothers</h3>
-      </VerticalFlexBox>
+      </VerticalFlexBox
 
       <HorizontalFlexBox gap={160}>
         <p>hola</p>

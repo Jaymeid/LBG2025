@@ -13,8 +13,8 @@ export default function SustainabilityPage() {
     <Main>
       <Carousel />
       <FlexRowContainer>
-        <FAQAccordion />
-        <StyledSustainabilityImage src={sustainabilityImage} />
+        <FAQA ccordion />
+        <StyledSustainabilityImage src={undefinedVariable} />
       </FlexRowContainer>
       <Form />
     </Main>
