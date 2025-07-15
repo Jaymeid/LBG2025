@@ -17,6 +17,7 @@ export default function Navbar() {
           Sustainability
         </StyledNavItem>
         <StyledNavItem href={routes.Careers}>Careers</StyledNavItem>
+        <StyledNavItem href={routes.Savings}>Savings</StyledNavItem>
       </StyledNavItemsContainer>
     </StyledNavContainer>
   );
