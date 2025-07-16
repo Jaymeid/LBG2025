@@ -30,15 +30,15 @@ const Savings: React.FC = () => {
   };
 
   return (
-    <Main>
+    <div style={{paddingLeft: "5vw", paddingRight: "5vw"}}>
     <HorizontalFlexBox gap={50} style={{}}>
     <div className="savings-page">
-      <h2 style={{color: "black"}}>Savings Account</h2>
-      <p style={{color: "black"}}>Grow your savings with competitive interest rates and no monthly fees.</p>
+      <h2>Savings Account</h2>
+      <p>Grow your savings with competitive interest rates and no monthly fees.</p>
 
 
-      <div className="calculator">
-        <label  style={{color: "black"}}>
+      <div className="calculator" style={{width: 250}}>
+        <label>
           Initial Deposit ($):
           <input
             type="number"
@@ -47,7 +47,7 @@ const Savings: React.FC = () => {
           />
         </label>
 
-        <label  style={{color: "black"}}>
+        <label>
           Annual Interest Rate (%):
           <input
             type="number"
@@ -56,7 +56,7 @@ const Savings: React.FC = () => {
           />
         </label>
 
-        <label  style={{color: "black"}}>
+        <label>
           Years:
           <input
             type="number"
@@ -79,7 +79,7 @@ const Savings: React.FC = () => {
 
     </VerticalFlexBox>
     </HorizontalFlexBox>
-    </Main>
+    </div>
   );
 };
 
