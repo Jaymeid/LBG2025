@@ -7,6 +7,7 @@ import SustainabilityPage from "./routes/sustainability/SustainabilityPage";
 import styled from "styled-components";
 import CareersPage from "./routes/careers/CareersPage";
 import InvestmentsPage from "./routes/Investments/investmentspage";
+import SavingsPage from "./routes/Savings/savingspage";
 const AppLayout = styled.div`
   min-height: 100vh;
   display: flex;
@@ -26,6 +27,7 @@ function App() {
           />
           <Route path={routes.Careers} element={<CareersPage />} />
           <Route path={routes.Investments} element={<InvestmentsPage />} />
+          <Route path={routes.Savings} element={<SavingsPage />} />
         </Routes>
         <Footer />
       </AppLayout>
