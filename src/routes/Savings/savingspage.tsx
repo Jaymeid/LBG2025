@@ -4,6 +4,7 @@ import './Savings.css';
 import { HorizontalFlexBox } from '../../components/horizontalFlexBox/HorizontalFlexBox.styled';
 import { Main } from '../../components/styled/Main.styled';
 import TextBox from '../../components/textBox/TextBox';
+import { VerticalFlexBox } from '../../components/verticalFlexBox/VerticalFlexBox.styled';
 
 const Savings: React.FC = () => {
   const [amount, setAmount] = useState<number | ''>('');
@@ -72,7 +73,11 @@ const Savings: React.FC = () => {
       
     </div>
     <img src={exampleImg} style={{width: 200}}/>
+    <VerticalFlexBox gap={50}>
     <TextBox heading={'Benefits of Saving'} text={'Saving money provides a strong foundation for financial stability and future planning. It allows individuals to prepare for unexpected expenses, achieve personal goals such as buying a home or funding education, and reduce reliance on credit. With a savings account, your money grows through earned interest, all while remaining secure and easily accessible. Regular saving also builds financial discipline, giving you greater control and peace of mind over your long-term financial well-being.'} />
+    <TextBox heading={"Children's account"} text={"Start your child’s savings journey with Lloyds Bank. Our Children’s Savings Account helps young savers learn the value of money while earning interest on their savings. It’s a simple, secure way to build healthy financial habits from an early age."} />
+
+    </VerticalFlexBox>
     </HorizontalFlexBox>
     </Main>
   );
