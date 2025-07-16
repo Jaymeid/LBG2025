@@ -32,12 +32,12 @@ const Savings: React.FC = () => {
     <Main>
     <HorizontalFlexBox gap={50} style={{}}>
     <div className="savings-page">
-      <h2>Savings Account</h2>
-      <p>Grow your savings with competitive interest rates and no monthly fees.</p>
+      <h2 style={{color: "black"}}>Savings Account</h2>
+      <p style={{color: "black"}}>Grow your savings with competitive interest rates and no monthly fees.</p>
 
 
       <div className="calculator">
-        <label>
+        <label  style={{color: "black"}}>
           Initial Deposit ($):
           <input
             type="number"
@@ -46,7 +46,7 @@ const Savings: React.FC = () => {
           />
         </label>
 
-        <label>
+        <label  style={{color: "black"}}>
           Annual Interest Rate (%):
           <input
             type="number"
@@ -55,7 +55,7 @@ const Savings: React.FC = () => {
           />
         </label>
 
-        <label>
+        <label  style={{color: "black"}}>
           Years:
           <input
             type="number"
