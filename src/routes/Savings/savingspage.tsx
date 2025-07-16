@@ -29,15 +29,15 @@ const Savings: React.FC = () => {
   };
 
   return (
-    <Main>
+    <div style={{paddingLeft: "5vw", paddingRight: "5vw"}}>
     <HorizontalFlexBox gap={50} style={{}}>
     <div className="savings-page">
-      <h2 style={{color: "black"}}>Savings Account</h2>
-      <p style={{color: "black"}}>Grow your savings with competitive interest rates and no monthly fees.</p>
+      <h2>Savings Account</h2>
+      <p>Grow your savings with competitive interest rates and no monthly fees.</p>
 
 
-      <div className="calculator">
-        <label  style={{color: "black"}}>
+      <div className="calculator" style={{width: 250}}>
+        <label>
           Initial Deposit ($):
           <input
             type="number"
@@ -46,7 +46,7 @@ const Savings: React.FC = () => {
           />
         </label>
 
-        <label  style={{color: "black"}}>
+        <label>
           Annual Interest Rate (%):
           <input
             type="number"
@@ -55,7 +55,7 @@ const Savings: React.FC = () => {
           />
         </label>
 
-        <label  style={{color: "black"}}>
+        <label>
           Years:
           <input
             type="number"
@@ -74,7 +74,7 @@ const Savings: React.FC = () => {
     <img src={exampleImg} style={{width: 200}}/>
     <TextBox heading={'Benefits of Saving'} text={'Saving money provides a strong foundation for financial stability and future planning. It allows individuals to prepare for unexpected expenses, achieve personal goals such as buying a home or funding education, and reduce reliance on credit. With a savings account, your money grows through earned interest, all while remaining secure and easily accessible. Regular saving also builds financial discipline, giving you greater control and peace of mind over your long-term financial well-being.'} />
     </HorizontalFlexBox>
-    </Main>
+    </div>
   );
 };
 
