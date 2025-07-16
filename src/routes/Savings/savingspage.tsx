@@ -1,5 +1,81 @@
-export default function SavingsPage() {
-    return (
-        <h1>Savings page</h1>
-    )
-}
+import React, { useState } from 'react';
+import exampleImg from '../../assets/PiggyBank.png'
+import './Savings.css'; 
+import { HorizontalFlexBox } from '../../components/horizontalFlexBox/HorizontalFlexBox.styled';
+import { Main } from '../../components/styled/Main.styled';
+import TextBox from '../../components/textBox/TextBox';
+
+const Savings: React.FC = () => {
+  const [amount, setAmount] = useState<number | ''>('');
+  const [rate, setRate] = useState<number | ''>('');
+  const [years, setYears] = useState<number | ''>('');
+  const [result, setResult] = useState<string>('');
+
+  const calculateInterest = () => {
+    if (
+      amount === '' ||
+      rate === '' ||
+      years === '' ||
+      isNaN(+amount) ||
+      isNaN(+rate) ||
+      isNaN(+years)
+    ) {
+      setResult('Please enter valid numbers.');
+      return;
+    }
+
+    const futureValue = +amount * Math.pow(1 + +rate / 100, +years);
+    setResult(`Estimated savings after ${years} years: $${futureValue.toFixed(2)}`);
+  };
+
+  return (
+    <Main>
+    <HorizontalFlexBox gap={50} style={{}}>
+    <div className="savings-page">
+      <h2>Savings Account</h2>
+      <p>Grow your savings with competitive interest rates and no monthly fees.</p>
+
+
+      <div className="calculator">
+        <label>
+          Initial Deposit ($):
+          <input
+            type="number"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value === '' ? '' : +e.target.value)}
+          />
+        </label>
+
+        <label>
+          Annual Interest Rate (%):
+          <input
+            type="number"
+            value={rate}
+            onChange={(e) => setRate(e.target.value === '' ? '' : +e.target.value)}
+          />
+        </label>
+
+        <label>
+          Years:
+          <input
+            type="number"
+            value={years}
+            onChange={(e) => setYears(e.target.value === '' ? '' : +e.target.value)}
+          />
+        </label>
+
+        <button onClick={calculateInterest}>Calculate</button>
+
+        {result && <div className="result">{result}</div>}
+      </div>
+      
+      
+    </div>
+    <img src={exampleImg} style={{width: 200}}/>
+    <TextBox heading={'Benefits of Saving'} text={'Saving money provides a strong foundation for financial stability and future planning. It allows individuals to prepare for unexpected expenses, achieve personal goals such as buying a home or funding education, and reduce reliance on credit. With a savings account, your money grows through earned interest, all while remaining secure and easily accessible. Regular saving also builds financial discipline, giving you greater control and peace of mind over your long-term financial well-being.'} />
+    </HorizontalFlexBox>
+    </Main>
+  );
+};
+
+export default Savings;
