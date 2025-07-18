@@ -6,6 +6,8 @@ import { HorizontalFlexBox } from '../../components/horizontalFlexBox/Horizontal
 import { Main } from '../../components/styled/Main.styled';
 import TextBox from '../../components/textBox/TextBox';
 import { VerticalFlexBox } from '../../components/verticalFlexBox/VerticalFlexBox.styled';
+import * as routes from "../manifest";
+import StyledButtonComponent from '../../components/styledButton/StyledButton';
 
 const Savings: React.FC = () => {
   const [amount, setAmount] = useState<number | ''>('');
@@ -68,7 +70,7 @@ const Savings: React.FC = () => {
 
         <button onClick={calculateInterest}>Calculate</button>
 
-        {result && <div className="result">{result}</div>}
+        {result && <div className="result" style={{color: "black"}}>{result}</div>}
       </div>
       
       
@@ -83,15 +85,22 @@ const Savings: React.FC = () => {
 
     </VerticalFlexBox>
     </HorizontalFlexBox>
-    <div className="isa-section">
-  <h2>ISA - Write about your experience:</h2>
-  <textarea id="isaTextbox" placeholder="Type here..."></textarea>
-  <p id="isaDescription">
+    <div style={{marginTop: 30}}>
+                     <StyledButtonComponent to={routes.Investments} >
+                          Investments page
+                        </StyledButtonComponent>
+                        </div>
+                        <div className="isa-section">
+                     
+  <h2 style={{color: "black"}}>ISA - Write about your experience:</h2>
+  <textarea id="isaTextbox" placeholder="Type here..." style={{color: "white"}}></textarea>
+  <p id="isaDescription" style={{color: "black"}}>
     ISA stands for Income Share Agreement. It is a financial structure where an individual agrees 
     to pay a percentage of their income for a set period of time in exchange for upfront funding, 
     often used for education or training.
   </p>
 </div>
+
     </div>
   );
 };
