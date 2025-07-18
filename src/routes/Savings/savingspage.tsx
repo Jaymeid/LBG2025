@@ -83,6 +83,15 @@ const Savings: React.FC = () => {
 
     </VerticalFlexBox>
     </HorizontalFlexBox>
+    <div className="isa-section">
+  <h2>ISA - Write about your experience:</h2>
+  <textarea id="isaTextbox" placeholder="Type here..."></textarea>
+  <p id="isaDescription">
+    ISA stands for Income Share Agreement. It is a financial structure where an individual agrees 
+    to pay a percentage of their income for a set period of time in exchange for upfront funding, 
+    often used for education or training.
+  </p>
+</div>
     </div>
   );
 };
