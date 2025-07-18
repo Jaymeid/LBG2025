@@ -26,7 +26,7 @@ export default function BigDropDown({
   };
 
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative", width: "90%" }}>
       <StyledFlexBox onClick={toggleDropDown}>
         <StyledDropDownTitle>{title}</StyledDropDownTitle>
         <StyledRotateContainer

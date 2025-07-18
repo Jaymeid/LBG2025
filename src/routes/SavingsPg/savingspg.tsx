@@ -1,6 +1,9 @@
 import TextBox from "../../components/textBox/TextBox";
 import { Main } from "../../components/styled/Main.styled";
 import { HorizontalFlexBox } from "../../components/horizontalFlexBox/HorizontalFlexBox.styled";
+import plantImage from "../../assets/savings1.jpg";
+import childImage from "../../assets/savings2.jpg";
+import darthImage from "../../assets/Darth.jpg"; 
 
 export default function savingspg() {
   return (
@@ -21,7 +24,11 @@ export default function savingspg() {
        text="A savings account offers a safe place to store your money while earning interest. It's an essential tool for managing your finances, providing liquidity, and helping you reach your financial goals. Furthermore, a savings account is always a smart choice."
        />
     </HorizontalFlexBox>
- 
+         <HorizontalFlexBox gap={200}>
+        <img src={plantImage}  style={{width: "300px", height: "250px" }}/>
+        <img src={darthImage}  style={{width: "300px", height: "250px" }}/>
+        <img src={childImage}  style={{width: "300px", height: "250px" }}/>
+      </HorizontalFlexBox>
       </Main>
   );
    

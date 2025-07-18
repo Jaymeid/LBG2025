@@ -16,7 +16,7 @@ export const StyledDropDownContainer = styled.div<{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
   left: 0;
-  transform: translateX(-25%);
+  transform: translateX(25%);
 `;
 
 export const StyledDropDownHeader = styled.div`
@@ -34,7 +34,7 @@ export const StyledDropDownHeader = styled.div`
 
 export const StyledDropDownTitle = styled.h3`
   margin: 0;
-  font-size: 16px;
+  font-size: 42px;
   color: #333;
 `;
 
@@ -62,10 +62,11 @@ export const StyledDropDownContent = styled.div`
 
 export const StyledFlexBox = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+  width: 100%;
   background-color: white;
   padding: 16px;
   border-radius: 16px;
