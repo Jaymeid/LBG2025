@@ -23,6 +23,13 @@ export default function savingspg() {
        heading="Why Open a Savings Account?"
        text="A savings account offers a safe place to store your money while earning interest. It's an essential tool for managing your finances, providing liquidity, and helping you reach your financial goals. Furthermore, a savings account is always a smart choice."
        />
+
+            <HorizontalFlexBox gap={160} >
+    <TextBox heading={"Current Savings"} text= {"2,900"} />
+    <TextBox heading={"Target Goal"} text={"£5,000"} />
+    <TextBox heading={"Input Savings"} text={"Click here to add more funds"} /> 
+    </HorizontalFlexBox>
+    
     </HorizontalFlexBox>
          <HorizontalFlexBox gap={200}>
         <img src={plantImage}  style={{width: "300px", height: "250px" }}/>

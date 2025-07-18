@@ -21,5 +21,6 @@ export default function Navbar() {
         <StyledNavItem href={routes.CreditPlans}>Credit Plans</StyledNavItem>
       </StyledNavItemsContainer>
     </StyledNavContainer>
+    
   );
 }

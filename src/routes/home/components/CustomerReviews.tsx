@@ -9,18 +9,15 @@ export default function CustomerReviews() {
   return (
     <StyledCustomerReviewContainer>
       <StyledCustomerReview>
-        <StyledHeader>Joanne Frost</StyledHeader>
+        <StyledHeader>Cristiano Ronaldo</StyledHeader>
         <StyledText>
-          "Applying for my mortgage through Lloyds was surprisingly easy. The
-          team explained everything clearly, and I felt supported throughout the
-          whole process."
+          "Very good service my friend suiiiiiiiiiii."
         </StyledText>
       </StyledCustomerReview>
       <StyledCustomerReview>
-        <StyledHeader>Anurada S</StyledHeader>
+        <StyledHeader>Mike Tyson</StyledHeader>
         <StyledText>
-          "I started a savings account last year and it's been great watching my
-          balance grow. The mobile app makes it so easy to keep track."
+          "I appreciate what lloyds for helping me with my mortgage."
         </StyledText>
       </StyledCustomerReview>
       <StyledCustomerReview>

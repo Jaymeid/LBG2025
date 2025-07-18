@@ -36,24 +36,25 @@ export default function HomePage() {
 
       <DropdownTextBox
         width={600}
-        heading={"Insurance"}
-        text={"Life insurance"}
-      />
-
+        heading={"Informations"}
+        text={"click to find out more"} />
       <GoalField label="Label" />
 
       <ProgressBar progress={60} />
 
-      <StyledButtonComponent to={routes.Careers}>
+      <HorizontalFlexBox gap={160} >
+      <p>Target goal</p>
+      <h2>Current savings</h2>
+      <h3>Input savings</h3>
+    </HorizontalFlexBox>
+    
+    <StyledButtonComponent to={routes.Careers}>
         Button Text here!!
       </StyledButtonComponent>
-
-      <TextBox
+    <TextBox
         heading="This is a heading"
-        text="Text box content here, skibidi or whatever"
-      />
-
-      <PartitionedProgressBar progress={68} snappy />
+        text="Text box content here, skibidi or whatever" />
     </Main>
-  );
+  
+);
 }
